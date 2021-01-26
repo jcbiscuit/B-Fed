@@ -88,6 +88,21 @@
             </objects>
             <point key="canvasLocation" x="37.681159420289859" y="146.65178571428569"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="22e-I6-k9G">
+            <objects>
+                <viewController id="w6j-rO-SZe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4v-WX-q2u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cQw-vN-nIE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Faf-RQ-wOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="475"/>
+        </scene>
         <!--Calculate View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -319,6 +334,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo Theme" width="341" height="341"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
