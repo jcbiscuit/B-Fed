@@ -8,10 +8,35 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+    
+    @IBOutlet weak var registerLabel: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        registerLabel.text = ""
+        var letterIndex = 0.0
+        let registerText = "Hello, Welcome!"
+        for letter in registerText {
+            Timer.scheduledTimer(withTimeInterval: 0.2 * letterIndex, repeats: false) { (timer) in
+                self.registerLabel.text?.append(letter)
+            }
+            letterIndex += 1
+            
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -87,3 +112,4 @@ class RegisterViewController: UIViewController {
     */
 
 }
+

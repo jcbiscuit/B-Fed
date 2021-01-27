@@ -29,8 +29,8 @@ class WelcomViewController: UIViewController {
         
         welcomeBackLabel.text = ""
         var letterIndex = 0.0
-        let BFedText = "Welcome Back!"
-        for letter in BFedText {
+        let bFedText = "Welcome Back!"
+        for letter in bFedText {
             Timer.scheduledTimer(withTimeInterval: 0.2 * letterIndex, repeats: false) { (timer) in
                 self.welcomeBackLabel.text?.append(letter)
             }
