@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
         var letterIndex = 0.0
         let registerText = "Hello, Welcome!"
         for letter in registerText {
-            Timer.scheduledTimer(withTimeInterval: 0.2 * letterIndex, repeats: false) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: 0.1 * letterIndex, repeats: false) { (timer) in
                 self.registerLabel.text?.append(letter)
             }
             letterIndex += 1
