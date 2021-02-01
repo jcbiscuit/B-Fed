@@ -6,10 +6,27 @@
 //
 
 import UIKit
+import Firebase
 
-class WelcomViewController: UIViewController {
+class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeBackLabel: UILabel!
+    @IBOutlet weak var loginEmailAddressTextField: UITextField!
+    @IBOutlet weak var loginPasswordTextField: UITextField!
+    
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    if let email = loginEmailAddressTextField.text, let password = loginPasswordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                print(e)
+                } else {
+                    self.performSegue(withIdentifier: "LoginToMenu", sender: self)
+                }
+            }
+        }
+    
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

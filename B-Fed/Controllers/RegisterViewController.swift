@@ -6,11 +6,28 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
     
     @IBOutlet weak var registerLabel: UILabel!
+    @IBOutlet weak var emailAddressTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+    if let email = emailAddressTextField.text, let password = passwordTextField.text {
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let e = error {
+                print(e)
+            }  else {
+                self.performSegue(withIdentifier: "RegisterToMenu", sender: self)
+            }
+        }
+    }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
