@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var welcomeBackLabel: UILabel!
     @IBOutlet weak var loginEmailAddressTextField: UITextField!
@@ -21,7 +21,7 @@ class WelcomeViewController: UIViewController {
                 if let e = error {
                 print(e)
                 } else {
-                    self.performSegue(withIdentifier: "LoginToMenu", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }
@@ -31,7 +31,6 @@ class WelcomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,28 +40,32 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         welcomeBackLabel.text = ""
         var letterIndex = 0.0
-        let bFedText = "Welcome Back!"
+        let bFedText = K.welcomeMessage
         for letter in bFedText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * letterIndex, repeats: false) { (timer) in
                 self.welcomeBackLabel.text?.append(letter)
             }
             letterIndex += 1
-            
-            
         }
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loginEmailAddressTextField.delegate = self
+        loginPasswordTextField.delegate = self
+      
+    }
+    
+    func hideKeyboard() {
+        loginEmailAddressTextField.resignFirstResponder()
+        loginPasswordTextField.resignFirstResponder()
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        hideKeyboard()
+        return true
+    }
+    
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
