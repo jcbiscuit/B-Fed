@@ -16,42 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Theme" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-So-vZ5">
-                                <rect key="frame" x="20" y="239" width="374" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHL-tl-HmW">
-                                <rect key="frame" x="184" y="785" width="137" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XHh-Ne-Oco" kind="show" identifier="NewToRegister" id="XxZ-U7-3hd"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5R-Rb-23u">
-                                <rect key="frame" x="121" y="796" width="79" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhF-pD-f6j">
-                                <rect key="frame" x="47" y="499" width="321" height="34"/>
+                                <rect key="frame" x="47" y="452" width="321" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjC-s3-OB6">
-                                <rect key="frame" x="47" y="556" width="321" height="34"/>
+                                <rect key="frame" x="47" y="515" width="321" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ0-Ea-j5g">
-                                <rect key="frame" x="93" y="623" width="228" height="43"/>
+                                <rect key="frame" x="125" y="578" width="165" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="35"/>
                                 <state key="normal" title="Login">
@@ -61,15 +39,30 @@
                                     <action selector="loginButtonPressed:" destination="XrS-10-L77" eventType="touchUpInside" id="jjV-If-BYZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Back!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-Dw-20N">
-                                <rect key="frame" x="47" y="180" width="332" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHL-tl-HmW">
+                                <rect key="frame" x="203" y="651" width="98" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="28"/>
-                                <color key="textColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XHh-Ne-Oco" kind="show" identifier="NewToRegister" id="XxZ-U7-3hd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGv-i8-Jld">
+                                <rect key="frame" x="125" y="663" width="79" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Theme" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-So-vZ5">
+                                <rect key="frame" x="63" y="261" width="285" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B-Fed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKe-Gb-Xqy">
-                                <rect key="frame" x="47" y="127" width="106" height="45"/>
+                                <rect key="frame" x="154" y="216" width="106" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="40"/>
                                 <color key="textColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,13 +76,12 @@
                     <connections>
                         <outlet property="loginEmailAddressTextField" destination="RhF-pD-f6j" id="u09-jK-NQj"/>
                         <outlet property="loginPasswordTextField" destination="DjC-s3-OB6" id="pE0-8v-UTn"/>
-                        <outlet property="welcomeBackLabel" destination="yJX-Dw-20N" id="dvV-oS-JDa"/>
                         <segue destination="w6j-rO-SZe" kind="show" identifier="LoginToMenu" id="Ioj-QI-VqH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W1-BZ-rFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="340"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="339.50892857142856"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="22e-I6-k9G">
@@ -307,55 +299,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMu-Dy-g98">
-                                <rect key="frame" x="43" y="493" width="321" height="34"/>
+                                <rect key="frame" x="43" y="467" width="321" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2P-RT-iQc">
-                                <rect key="frame" x="43" y="555" width="321" height="34"/>
+                                <rect key="frame" x="43" y="533" width="321" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-hW-g0B">
-                                <rect key="frame" x="250" y="776" width="42" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XrS-10-L77" kind="show" identifier="ReturnToLogin" id="EaU-AP-y6c"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B-Fed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-0m-1gh">
-                                <rect key="frame" x="63" y="133" width="106" height="45"/>
+                                <rect key="frame" x="154" y="234" width="106" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="40"/>
                                 <color key="textColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-T2-Pfm">
-                                <rect key="frame" x="63" y="201" width="193" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="28"/>
-                                <color key="textColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Theme" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-Xz-TI6">
-                                <rect key="frame" x="20" y="248" width="374" height="212"/>
+                                <rect key="frame" x="65" y="287" width="285" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already a user?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-sA-Jfe">
-                                <rect key="frame" x="116" y="782" width="114" height="19"/>
+                                <rect key="frame" x="111" y="672" width="114" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srP-to-OiN">
-                                <rect key="frame" x="85" y="629" width="245" height="65"/>
+                                <rect key="frame" x="85" y="575" width="245" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="35"/>
                                 <state key="normal" title="Register">
@@ -363,6 +337,17 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="XHh-Ne-Oco" eventType="touchUpInside" id="Sid-ae-qZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-hW-g0B">
+                                <rect key="frame" x="246" y="666" width="42" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XrS-10-L77" kind="show" identifier="ReturnToLogin" id="EaU-AP-y6c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -373,7 +358,6 @@
                     <connections>
                         <outlet property="emailAddressTextField" destination="lMu-Dy-g98" id="MBe-mM-XpD"/>
                         <outlet property="passwordTextField" destination="f2P-RT-iQc" id="0gQ-qz-mVe"/>
-                        <outlet property="registerLabel" destination="VW9-T2-Pfm" id="OvI-AZ-T3S"/>
                         <segue destination="w6j-rO-SZe" kind="show" identifier="RegisterToMenu" id="h55-mb-k0B"/>
                     </connections>
                 </viewController>
@@ -462,8 +446,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XxZ-U7-3hd"/>
-        <segue reference="Ioj-QI-VqH"/>
+        <segue reference="h55-mb-k0B"/>
         <segue reference="EaU-AP-y6c"/>
     </inferredMetricsTieBreakers>
     <resources>
