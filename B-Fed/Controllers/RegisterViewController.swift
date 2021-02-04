@@ -13,13 +13,15 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var registerLabel: UILabel!
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordError: UILabel!
     
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
     if let email = emailAddressTextField.text, let password = passwordTextField.text {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let e = error {
-                print(e)
+            if error != nil {
+                self.passwordError.text = error!.localizedDescription
+                self.passwordError.alpha = 1
             }  else {
                 self.performSegue(withIdentifier: K.registerSegue, sender: self)
             }

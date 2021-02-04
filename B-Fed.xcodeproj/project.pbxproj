@@ -11,7 +11,6 @@
 		3118280D25B591B600A66969 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118280C25B591B600A66969 /* SceneDelegate.swift */; };
 		3118280F25B591B600A66969 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118280E25B591B600A66969 /* CalculateViewController.swift */; };
 		3118281225B591B600A66969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3118281025B591B600A66969 /* Main.storyboard */; };
-		3118281425B591BA00A66969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3118281325B591BA00A66969 /* Assets.xcassets */; };
 		3118281725B591BA00A66969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3118281525B591BA00A66969 /* LaunchScreen.storyboard */; };
 		3118283025B6EAFB00A66969 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118282F25B6EAFB00A66969 /* ResultsViewController.swift */; };
 		3135B7A825BACC08009972AF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135B7A725BACC08009972AF /* WelcomeViewController.swift */; };
@@ -21,6 +20,7 @@
 		31876F3D25C94E5D0011D6AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31876F3C25C94E5D0011D6AA /* Constants.swift */; };
 		31C3CEA825C384B2009A9F95 /* MeasureResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */; };
 		31C3CEAB25C7C001009A9F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */; };
+		31D6DD1B25CB9E730003AD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D6DD1A25CB9E720003AD9C /* Assets.xcassets */; };
 		DC1802387088D9B33D36C301 /* Pods_B_Fed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDBDCEEAE2BD5552BCB06FF /* Pods_B_Fed.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		3118280C25B591B600A66969 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3118280E25B591B600A66969 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		3118281125B591B600A66969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3118281325B591BA00A66969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3118281625B591BA00A66969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3118281825B591BA00A66969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3118282F25B6EAFB00A66969 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		31876F3C25C94E5D0011D6AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureResultsViewController.swift; sourceTree = "<group>"; };
 		31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31D6DD1A25CB9E720003AD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
 		A4F1CD4D003A65DA657650D3 /* Pods-B-Fed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-Fed.release.xcconfig"; path = "Target Support Files/Pods-B-Fed/Pods-B-Fed.release.xcconfig"; sourceTree = "<group>"; };
 		B7A620780534E065511B1DD4 /* Pods-B-Fed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-Fed.debug.xcconfig"; path = "Target Support Files/Pods-B-Fed/Pods-B-Fed.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDBDCEEAE2BD5552BCB06FF /* Pods_B_Fed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_Fed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +93,11 @@
 				3118282625B6E42B00A66969 /* Models */,
 				3118282725B6E43600A66969 /* Views */,
 				3118282825B6E44300A66969 /* Controllers */,
-				3118281325B591BA00A66969 /* Assets.xcassets */,
 				3118281525B591BA00A66969 /* LaunchScreen.storyboard */,
 				3118281825B591BA00A66969 /* Info.plist */,
 				31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */,
 				31876F3C25C94E5D0011D6AA /* Constants.swift */,
+				31D6DD1A25CB9E720003AD9C /* Assets.xcassets */,
 			);
 			path = "B-Fed";
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			files = (
 				3118281725B591BA00A66969 /* LaunchScreen.storyboard in Resources */,
 				31C3CEAB25C7C001009A9F95 /* GoogleService-Info.plist in Resources */,
-				3118281425B591BA00A66969 /* Assets.xcassets in Resources */,
+				31D6DD1B25CB9E730003AD9C /* Assets.xcassets in Resources */,
 				3118281225B591B600A66969 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

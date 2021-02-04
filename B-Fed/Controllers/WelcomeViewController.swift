@@ -13,13 +13,14 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var welcomeBackLabel: UILabel!
     @IBOutlet weak var loginEmailAddressTextField: UITextField!
     @IBOutlet weak var loginPasswordTextField: UITextField!
-    
+    @IBOutlet weak var passwordError: UILabel!
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
     if let email = loginEmailAddressTextField.text, let password = loginPasswordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if let e = error {
-                print(e)
+                if error != nil {
+                    self.passwordError.text = error!.localizedDescription
+                    self.passwordError.alpha = 1
                 } else {
                     self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
