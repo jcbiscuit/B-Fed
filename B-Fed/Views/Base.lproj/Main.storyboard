@@ -57,6 +57,10 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Single Rainbow" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-So-vZ5">
+                                <rect key="frame" x="0.0" y="194" width="414" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-Pw-qMc">
                                 <rect key="frame" x="47" y="629" width="332" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,10 +68,6 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title Logo Lift Dark" translatesAutoresizingMaskIntoConstraints="NO" id="Zvz-l7-DVQ">
-                                <rect key="frame" x="87" y="105" width="227" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIC-mO-9hq">
                                 <rect key="frame" x="47" y="557" width="321" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,8 +75,8 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Theme" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-So-vZ5">
-                                <rect key="frame" x="0.0" y="194" width="414" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bumble Bee Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zvz-l7-DVQ">
+                                <rect key="frame" x="54" y="91" width="307" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -323,23 +323,12 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already a user?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-sA-Jfe">
-                                <rect key="frame" x="109" y="710" width="114" height="19"/>
+                                <rect key="frame" x="106" y="689" width="114" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-hW-g0B">
-                                <rect key="frame" x="248" y="704" width="42" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XrS-10-L77" kind="show" identifier="ReturnToLogin" id="EaU-AP-y6c"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezM-tv-qUU">
                                 <rect key="frame" x="0.0" y="567" width="414" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -348,7 +337,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srP-to-OiN">
-                                <rect key="frame" x="85" y="624" width="245" height="65"/>
+                                <rect key="frame" x="85" y="601" width="245" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="35"/>
                                 <state key="normal" title="Register">
@@ -358,14 +347,25 @@
                                     <action selector="registerButtonPressed:" destination="XHh-Ne-Oco" eventType="touchUpInside" id="Sid-ae-qZt"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Theme" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-Xz-TI6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Single Rainbow" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-Xz-TI6">
                                 <rect key="frame" x="0.0" y="195" width="414" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title Logo Lift Dark" translatesAutoresizingMaskIntoConstraints="NO" id="aey-jN-qUB">
-                                <rect key="frame" x="93" y="99" width="227" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bumble Bee Logo" translatesAutoresizingMaskIntoConstraints="NO" id="aey-jN-qUB">
+                                <rect key="frame" x="57" y="99" width="301" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-hW-g0B">
+                                <rect key="frame" x="242" y="683" width="42" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.16714538409999999" green="0.4495226564" blue="0.53417119290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XrS-10-L77" kind="show" identifier="ReturnToLogin" id="EaU-AP-y6c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lcV-DX-NQG"/>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.92549019607843142" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -463,16 +463,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XxZ-U7-3hd"/>
-        <segue reference="Ioj-QI-VqH"/>
+        <segue reference="h55-mb-k0B"/>
         <segue reference="EaU-AP-y6c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bottle Button" width="341" height="341"/>
+        <image name="Bumble Bee Logo" width="341" height="341"/>
         <image name="Logo Theme" width="341" height="341"/>
         <image name="Measure Button" width="341" height="341"/>
         <image name="Recipe Button" width="341" height="341"/>
-        <image name="Title Logo Lift Dark" width="341" height="341"/>
+        <image name="Single Rainbow" width="341" height="341"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
