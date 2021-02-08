@@ -10,7 +10,6 @@ import Firebase
 
 class WelcomeViewController: UIViewController, UITextFieldDelegate{
     
-    @IBOutlet weak var welcomeBackLabel: UILabel!
     @IBOutlet weak var loginEmailAddressTextField: UITextField!
     @IBOutlet weak var loginPasswordTextField: UITextField!
     @IBOutlet weak var passwordError: UILabel!

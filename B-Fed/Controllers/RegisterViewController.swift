@@ -11,6 +11,7 @@ import Firebase
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailAddressTextField: UITextField!
@@ -20,7 +21,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         if let email = emailAddressTextField.text, let password = passwordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            Auth.auth().createUser(withEmail: email, password: password) { [self] authResult, error in
             if error != nil {
                 self.passwordError.text = error!.localizedDescription
                 self.passwordError.alpha = 1
@@ -28,17 +29,23 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 
             }
+                
+                    let db = Firestore.firestore()
+                
+                db.collection("users").addDocument(data: ["first":firstNameTextField!, "last":lastNameTextField!, "uid":authResult!.user.uid as Any]) { (error) in
+                
+                        if error != nil {
+                            self.passwordError.text = error!.localizedDescription
+                            self.passwordError.alpha = 1
+                        } else {
+                            self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                        }
+            }
               
         }
     }
     }
-//    let db = Firestore.firestore()
-//
-//    db.collection("users").addDocument(data: ["first name": self.firstNameTextField, "last name": self.lastNameTextField, "uid":authResult!.user.uid]) { (error) in
-//
-//        if error != nil {
-//            self.passwordError.text = error!.localizedDescription
-//        }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
