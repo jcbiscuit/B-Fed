@@ -19,6 +19,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordError: UILabel!
     
     
+    
+    
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         if let email = emailAddressTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { [self] authResult, error in
@@ -26,13 +28,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 self.passwordError.text = error!.localizedDescription
                 self.passwordError.alpha = 1
             }  else {
-                self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 
-            }
+                let firstName = firstNameTextField.text!
+                let lastName = lastNameTextField.text!
                 
                     let db = Firestore.firestore()
                 
-                db.collection("users").addDocument(data: ["first":firstNameTextField!, "last":lastNameTextField!, "uid":authResult!.user.uid as Any]) { (error) in
+                
+                db.collection("users").addDocument(data:["first":firstName , "last":lastName, "uid":authResult!.user.uid]) { (error) in
                 
                         if error != nil {
                             self.passwordError.text = error!.localizedDescription
@@ -45,7 +48,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         }
     }
     }
-
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -62,7 +65,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         
+        
+        
         emailAddressTextField.delegate = self
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
         passwordTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillShowNotification, object: nil)
