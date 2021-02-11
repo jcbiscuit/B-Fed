@@ -416,12 +416,40 @@
                         <outlet property="lastNameTextField" destination="ACn-aw-vzd" id="UVb-t5-cBv"/>
                         <outlet property="passwordError" destination="ezM-tv-qUU" id="wuC-dL-BHV"/>
                         <outlet property="passwordTextField" destination="f2P-RT-iQc" id="0gQ-qz-mVe"/>
-                        <segue destination="w6j-rO-SZe" kind="show" identifier="RegisterToMenu" id="h55-mb-k0B"/>
+                        <segue destination="w6j-rO-SZe" kind="show" identifier="RegisterToMenu" id="P3V-o5-ZZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRg-jb-qDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782.60869565217399" y="-284.59821428571428"/>
+        </scene>
+        <!--Welcome Message View Controller-->
+        <scene sceneID="Z82-sg-PGP">
+            <objects>
+                <viewController id="Zd0-bk-OiP" customClass="WelcomeMessageViewController" customModule="B_Fed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="urX-Zr-NGS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90Y-oS-NHh">
+                                <rect key="frame" x="55" y="400" width="304" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q5J-Tu-bf7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8vU-Fk-0uF"/>
+                    <connections>
+                        <outlet property="welcomeMessageLabel" destination="90Y-oS-NHh" id="SZL-dM-Hpd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRf-8y-g7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="-596.65178571428567"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="OQw-yp-gEY">
@@ -504,7 +532,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h55-mb-k0B"/>
+        <segue reference="P3V-o5-ZZJ"/>
         <segue reference="EaU-AP-y6c"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -514,6 +542,9 @@
         <image name="Rainbow1" width="341" height="341"/>
         <image name="Recipe Button" width="341" height="341"/>
         <image name="white small bfed-2" width="341" height="341"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

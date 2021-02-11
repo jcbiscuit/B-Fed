@@ -18,6 +18,7 @@
 		314D0A7225C1930200EA3763 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D0A7125C1930200EA3763 /* MenuViewController.swift */; };
 		314D0A7725C193E800EA3763 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D0A7625C193E800EA3763 /* MeasureViewController.swift */; };
 		31876F3D25C94E5D0011D6AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31876F3C25C94E5D0011D6AA /* Constants.swift */; };
+		318EC37D25D2539500DA0E0C /* WelcomeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EC37C25D2539500DA0E0C /* WelcomeMessageViewController.swift */; };
 		31C3CEA825C384B2009A9F95 /* MeasureResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */; };
 		31C3CEAB25C7C001009A9F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */; };
 		31D6DD1B25CB9E730003AD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D6DD1A25CB9E720003AD9C /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		314D0A7125C1930200EA3763 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		314D0A7625C193E800EA3763 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
 		31876F3C25C94E5D0011D6AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		318EC37C25D2539500DA0E0C /* WelcomeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageViewController.swift; sourceTree = "<group>"; };
 		31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureResultsViewController.swift; sourceTree = "<group>"; };
 		31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31D6DD1A25CB9E720003AD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3118282F25B6EAFB00A66969 /* ResultsViewController.swift */,
 				314D0A7625C193E800EA3763 /* MeasureViewController.swift */,
 				31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */,
+				318EC37C25D2539500DA0E0C /* WelcomeMessageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				314D0A7725C193E800EA3763 /* MeasureViewController.swift in Sources */,
 				3118280D25B591B600A66969 /* SceneDelegate.swift in Sources */,
 				314D0A7225C1930200EA3763 /* MenuViewController.swift in Sources */,
+				318EC37D25D2539500DA0E0C /* WelcomeMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
