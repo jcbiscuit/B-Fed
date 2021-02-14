@@ -8,20 +8,25 @@
 import UIKit
 import Firebase
 
-class WelcomeViewController: UIViewController, UITextFieldDelegate{
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginEmailAddressTextField: UITextField!
     @IBOutlet weak var loginPasswordTextField: UITextField!
     @IBOutlet weak var passwordError: UILabel!
     
+    let userDefault = UserDefaults.standard
+    let launchedBefore = UserDefaults.standard.bool(forKey: "IsLoggedIn")
+    
     @IBAction func loginButtonPressed(_ sender: UIButton) {
     if let email = loginEmailAddressTextField.text, let password = loginPasswordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+        Auth.auth().signIn(withEmail: email, password: password) { [self] authResult, error in
                 if error != nil {
                     self.passwordError.text = error!.localizedDescription
                     self.passwordError.alpha = 1
                 } else {
                     self.performSegue(withIdentifier: K.loginSegue, sender: self)
+                    self.userDefault.set(true, forKey: "IsLoggedIn")
+                    self.userDefault.synchronize()
                 }
             }
         }
@@ -75,11 +80,10 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate{
         }
     
     }
-
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
+    
+   
 
 }
+
+
+

@@ -13,15 +13,15 @@
 		3118281225B591B600A66969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3118281025B591B600A66969 /* Main.storyboard */; };
 		3118281725B591BA00A66969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3118281525B591BA00A66969 /* LaunchScreen.storyboard */; };
 		3118283025B6EAFB00A66969 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118282F25B6EAFB00A66969 /* ResultsViewController.swift */; };
-		3135B7A825BACC08009972AF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135B7A725BACC08009972AF /* WelcomeViewController.swift */; };
+		3135B7A825BACC08009972AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135B7A725BACC08009972AF /* LoginViewController.swift */; };
 		3135B7AD25BAD008009972AF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135B7AC25BAD008009972AF /* RegisterViewController.swift */; };
 		314D0A7225C1930200EA3763 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D0A7125C1930200EA3763 /* MenuViewController.swift */; };
 		314D0A7725C193E800EA3763 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D0A7625C193E800EA3763 /* MeasureViewController.swift */; };
 		31876F3D25C94E5D0011D6AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31876F3C25C94E5D0011D6AA /* Constants.swift */; };
 		318EC37D25D2539500DA0E0C /* WelcomeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EC37C25D2539500DA0E0C /* WelcomeMessageViewController.swift */; };
+		31AA58C625D76603001B4549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AA58C525D76603001B4549 /* Assets.xcassets */; };
 		31C3CEA825C384B2009A9F95 /* MeasureResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */; };
 		31C3CEAB25C7C001009A9F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */; };
-		31D6DD1B25CB9E730003AD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D6DD1A25CB9E720003AD9C /* Assets.xcassets */; };
 		DC1802387088D9B33D36C301 /* Pods_B_Fed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDBDCEEAE2BD5552BCB06FF /* Pods_B_Fed.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,15 +34,16 @@
 		3118281625B591BA00A66969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3118281825B591BA00A66969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3118282F25B6EAFB00A66969 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		3135B7A725BACC08009972AF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3135B7A725BACC08009972AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3135B7AC25BAD008009972AF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		314D0A7125C1930200EA3763 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		314D0A7625C193E800EA3763 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
 		31876F3C25C94E5D0011D6AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		318EC37C25D2539500DA0E0C /* WelcomeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageViewController.swift; sourceTree = "<group>"; };
+		31AA58BD25D76440001B4549 /* B-Fed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "B-Fed"; sourceTree = "<group>"; };
+		31AA58C525D76603001B4549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31C3CEA725C384B2009A9F95 /* MeasureResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureResultsViewController.swift; sourceTree = "<group>"; };
 		31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		31D6DD1A25CB9E720003AD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
 		A4F1CD4D003A65DA657650D3 /* Pods-B-Fed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-Fed.release.xcconfig"; path = "Target Support Files/Pods-B-Fed/Pods-B-Fed.release.xcconfig"; sourceTree = "<group>"; };
 		B7A620780534E065511B1DD4 /* Pods-B-Fed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-Fed.debug.xcconfig"; path = "Target Support Files/Pods-B-Fed/Pods-B-Fed.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDBDCEEAE2BD5552BCB06FF /* Pods_B_Fed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_Fed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +100,8 @@
 				3118281825B591BA00A66969 /* Info.plist */,
 				31C3CEAA25C7C001009A9F95 /* GoogleService-Info.plist */,
 				31876F3C25C94E5D0011D6AA /* Constants.swift */,
-				31D6DD1A25CB9E720003AD9C /* Assets.xcassets */,
+				31AA58C525D76603001B4549 /* Assets.xcassets */,
+				31AA58BD25D76440001B4549 /* B-Fed */,
 			);
 			path = "B-Fed";
 			sourceTree = "<group>";
@@ -122,7 +124,7 @@
 		3118282825B6E44300A66969 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3135B7A725BACC08009972AF /* WelcomeViewController.swift */,
+				3135B7A725BACC08009972AF /* LoginViewController.swift */,
 				3135B7AC25BAD008009972AF /* RegisterViewController.swift */,
 				314D0A7125C1930200EA3763 /* MenuViewController.swift */,
 				3118280E25B591B600A66969 /* CalculateViewController.swift */,
@@ -203,7 +205,7 @@
 			files = (
 				3118281725B591BA00A66969 /* LaunchScreen.storyboard in Resources */,
 				31C3CEAB25C7C001009A9F95 /* GoogleService-Info.plist in Resources */,
-				31D6DD1B25CB9E730003AD9C /* Assets.xcassets in Resources */,
+				31AA58C625D76603001B4549 /* Assets.xcassets in Resources */,
 				3118281225B591B600A66969 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +261,7 @@
 			files = (
 				31C3CEA825C384B2009A9F95 /* MeasureResultsViewController.swift in Sources */,
 				3118283025B6EAFB00A66969 /* ResultsViewController.swift in Sources */,
-				3135B7A825BACC08009972AF /* WelcomeViewController.swift in Sources */,
+				3135B7A825BACC08009972AF /* LoginViewController.swift in Sources */,
 				3118280F25B591B600A66969 /* CalculateViewController.swift in Sources */,
 				3135B7AD25BAD008009972AF /* RegisterViewController.swift in Sources */,
 				31876F3D25C94E5D0011D6AA /* Constants.swift in Sources */,

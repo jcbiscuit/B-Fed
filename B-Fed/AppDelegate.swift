@@ -9,11 +9,13 @@ import UIKit
 import Firebase
 import UserNotifications
 
+let userDefault = UserDefaults.standard
+let launchedBefore = UserDefaults.standard.bool(forKey: "Is Logged In")
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
