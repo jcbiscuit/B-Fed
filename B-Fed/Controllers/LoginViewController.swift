@@ -46,7 +46,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        if userDefault.bool(forKey: "usersignedin") {
+            performSegue(withIdentifier: K.loginSegue, sender: self)
+                }
         
 
         loginEmailAddressTextField.delegate = self
