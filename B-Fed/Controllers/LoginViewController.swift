@@ -14,8 +14,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginPasswordTextField: UITextField!
     @IBOutlet weak var passwordError: UILabel!
     
+    
     let userDefault = UserDefaults.standard
     let launchedBefore = UserDefaults.standard.bool(forKey: "IsLoggedIn")
+    
+    
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
     if let email = loginEmailAddressTextField.text, let password = loginPasswordTextField.text {
@@ -33,6 +36,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     }
     
+    
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
@@ -47,7 +54,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         if userDefault.bool(forKey: "usersignedin") {
-            performSegue(withIdentifier: K.loginSegue, sender: self)
+//            performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
         
 

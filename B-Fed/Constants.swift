@@ -9,4 +9,5 @@ struct K {
     static let loginSegue = "LoginToMenu"
     static let registerSegue = "RegisterToMenu"
     static let welcomeMessageSegue = "RegisterToWelcome"
+    static let passwordResetSegue = "ForgottenPasswordSegue"
 }
